@@ -1,0 +1,42 @@
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>Diploma of Pacific Western University</title>
+</head>
+
+<body>
+<center>
+	<h1>
+		<span style="color:blue">Pacific</span>&nbsp;
+		<span style="color:orange">Western</span>&nbsp;
+		<span style="color:green">University</span>
+	</h1>
+	<form action="/">
+		Input your English name: 
+		<input type="text" name="your_name" value="<%= @your_name %>" />
+		<br /><br />
+		<input type="submit" value="Create Diploma" />
+	</form>
+	<div style="color: red; font-weight:bold; font-size:18px">
+	<% if @image_tag != '' %>
+		Congratulations, <%= @your_name %> !
+		<br />You now a member of the powerful PWU alumni network.<br />
+		<%= @image_tag %>
+	<% else %>
+		You're not yet an alumni of PWU. Why not buy a diploma at our website?
+	<% end %>
+	</div>
+
+	<br />
+	<div>
+		<a href="/" title="Diploma of Pacific Western University">Index</a>
+		<a href="http://www.dooxoo.cn" target="_blank">About Us</a>
+		<a href="http://t.sina.com.cn/fangzhouzi" target="_blank" title="科普作家，打假斗士">Fangzhouzi</a>
+		<a href="http://t.sina.com.cn/tangjun" target="_blank" title="美国著名的西太平洋大学知名校友">Jun Tang</a>
+		<br />We are not affiliated with any parties.
+		<br />Contact:&nbsp;
+		<a href="#">korpus (at) yahoo.cn</a>
+	</div>
+</center>
+</body>
+</html>
